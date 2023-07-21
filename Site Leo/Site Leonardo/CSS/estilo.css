@@ -1,0 +1,92 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
+    box-sizing: border-box;
+}
+#menu-h{
+    background-color: #000000;
+}
+#menu-h ul{
+    max-width: 80%;
+    padding: 0;
+}
+#menu-h ul li{
+    display:inline
+}
+#menu-h ul li a{
+
+    color: #2d0aab;
+    padding: 15px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background .8s;
+}
+#menu-h ul li a:hover{
+    background-color: #da1515;
+}
+/* efeito menu */
+/* deslocar o menu para a direita */
+#menu-h ul li:last-child a{
+    float: right;
+    background-color: #fff;
+}
+
+/* CSS do banner */
+.text_banner{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-size: xx-large;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #2d0aab;
+}
+body,html{
+    height: 100%;
+}
+/* CSS para as imagens pequenas */
+.column{
+    float: right;
+    width: 25%;
+    /* criando margem interna */
+    padding: 100px 100px;
+    text-align: center;
+}
+.column img{
+    width: 100px;
+    border: 1px solid #2d0aab;
+    border-radius: 5%;
+    padding: 10px;
+}
+/* CSS imagem */
+.banner{
+    background-image:url("/img/Principal.png") ;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+/* CSS para imagens pequenas */
+.column{
+    float: left;
+    width: 25%;
+    padding: 100px 100px;
+    text-align: center; 
+}
+.column img{
+    border-radius: 5%;
+    width: 100px;
+    padding: 10px;
+    border: 1px solid #000000
+}
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
